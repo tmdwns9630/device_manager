@@ -1,3 +1,6 @@
+//1
+//여기서부터 복붙해서 카운트됨.
+
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 
