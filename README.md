@@ -281,8 +281,10 @@ export default async function handler(
 * 그걸 users에 담기 위해 콘솔.로그를 setUsers로 바꿔준다.
 
 ```
-fetch("/api/alluser")
+  useEffect(() => {
+    fetch("/api/alluser")
       .then((res) => res.json())
-      .then((json) => console.log(json));
+      .then((json) => setUsers(json.users));
+    // console.log(users);
   }, []);
 ```
